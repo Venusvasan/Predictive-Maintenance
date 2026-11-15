@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install Dependencies
-        run:pip install -r Predictive_Maintenance/requirements.txt
+        run: pip install -r Predictive_Maintenance/requirements.txt
       - name: Register Dataset
         run: python Predictive_Maintenance/Model_Building/data_register.py
       - name: Upload Registered Dataset
