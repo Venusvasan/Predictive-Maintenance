@@ -25,12 +25,12 @@ with col2:
     coolant_temp = st.number_input("Coolant Temperature(Celsius)", min_value=50.0, max_value=210.0, value=80.0)
 
 input_data = pd.DataFrame([{
-    "Engine_RPM": engine_rpm,
-    "Lub_Oil_Pressure": lub_oil_pressure,
-    "Fuel_Pressure": fuel_pressure,
-    "Coolant_Pressure": coolant_pressure,
-    "Lub_Oil_Temperature": lub_oil_temp,
-    "Coolant_Temperature": coolant_temp
+    "Engine rpm": engine_rpm,
+    "Lub oil pressure": lub_oil_pressure,
+    "Fuel pressure": fuel_pressure,
+    "Coolant pressure": coolant_pressure,
+    "lub oil temp": lub_oil_temp,
+    "Coolant temp": coolant_temp
 }])
 
 st.divider()
