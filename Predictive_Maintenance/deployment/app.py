@@ -106,7 +106,7 @@ if st.button("🔍 Run Diagnostic Prediction", type="primary", use_container_wid
     threshold = 0.55
     prediction = int(fault_prob >= threshold)
 
-    st.subheader("2. Diagnostic Assessment Result")
+    st.subheader("Diagnostic Assessment Result")
     res_col1, res_col2 = st.columns([1, 2])
 
     with res_col1:
