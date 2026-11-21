@@ -72,10 +72,10 @@ st.subheader("Enter Sensor data")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.markdown('<div class="section-card">🔄 Speed Sensor</div>', unsafe_allow_html=True)    
+    st.markdown('<div class="section-card">🔄 Speed Sensor</div>', unsafe_allow_html=True)
     engine_rpm = st.number_input("Engine RPM", min_value=50, max_value=2500, value=900, step=10, help="Crankshaft speed in revolutions per minute")
 with col2:
-    st.markdown('<div class="section-card">⏲️ Pressure Sensors </div>', unsafe_allow_html=True)    
+    st.markdown('<div class="section-card">⏲️ Pressure Sensors </div>', unsafe_allow_html=True)
     fuel_pressure = st.number_input("Fuel Pressure (bar)", min_value=0.0, max_value=25.0, value=5.0, step=0.1, help="Fuel injection supply pressure")
     coolant_pressure = st.number_input("Coolant Pressure (bar)", min_value=0.0, max_value=10.0, value=2.0, step=0.1, help="Liquid cooling circuit pressure")
     lub_oil_pressure = st.number_input("Lub Oil Pressure (bar)", min_value=0.0, max_value=10.0, value=4.0, step=0.1, help="Lubricating oil circuit pressure")
